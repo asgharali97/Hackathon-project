@@ -24,7 +24,8 @@ function App() {
 
   return (
     <>
-    <div className=" h-screen">
+    {/* Fredoka One */}
+    <div className="h-screen">
       <Header/>
       <main>
         <Outlet/>

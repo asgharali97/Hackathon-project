@@ -22,11 +22,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="px-10 py-5 flex items-center justify-between relative">
-        <div className="ml-6 flex items-center">
+      <header className="px-10 py-4 flex items-center justify-between font-fre bg-[#E5E7EB]">
+        <div className="flex items-center text-2xl font-bold cursor-pointer tracking-wider text-[#1F2937]">
           InspireClimb
         </div>
-        <nav className="flex items-center text-black border border-black py-3 px-8  w-max  border-solid rounded-full font-medium capitalize fixed top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-sm z-50 dark:bg-[#d1d1d1]">
+        <nav className="flex items-center text-[#1F2937] border border-black py-3 px-8  w-max  border-solid rounded-full font-medium capitalize fixed top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-sm z-50 dark:bg-[#d1d1d1] mt-2">
           <ul className="flex items-center">
             {navItem.map((item) =>
               (
@@ -42,12 +42,12 @@ const Header = () => {
             )}
             
               {/* {themeMode === "light" ? ( */}
-                <svg
+                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  className="w-full h-auto fill-dark"
+                  className="w-full h-auto fill-black cursor-pointer ml-1"
                 >
                   <g
                     fill="none"
@@ -223,7 +223,7 @@ const Header = () => {
                   height="24"
                   viewBox="0 0 24 24"
                   className="w-full h-auto fill-dark"
-                >
+                  >
                   <rect
                     x="0"
                     y="0"
@@ -380,7 +380,8 @@ const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center">
-           <button className="bg-yellow-500 py-3 px-10 rounded-full shadow-md">Join us</button>
+          {/* <Button text='Jion us' /> */}
+           <button className="bg-[#FDE047] py-2 px-8 text-lg rounded-full shadow-md text-[#1F2937] font-semibold ">Join us</button>
         </div>
       </header>
     </>
