@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "./Input";
 
 const Join = () => {
+  const [name , setName] = useState('')
+  const [email , setEmail] = useState('')
+  const handleForm = (e)=>{
+    e.preventDefault();
+    setName('')
+    setEmail('')
+  }
   return (
     <>
       <div className="py-16 px-16 min-h-screen flex flex-wrap w-full bg-gradient-to-tr from-[#FDE047]  to-[#578CFF] gap-5">
@@ -58,27 +65,22 @@ const Join = () => {
             />
           </div>
           <div className="info w-[50%]">
-            <Input label="Name" />
-            <Input label="Email" type="email" />
-            <div className="w-[15vw]">
-              <label className="inline-block mb-2 pl-1 font-semibold">
-                How will you join
-              </label>
-              <select
-                className={`py-3 px-2 rounded-full text-black bg-white outline-none focus:bg-gray-50 duration-200 w-full`}
-              >
-                <option className="text-[#1F2937] rounded-2xl">
-                  Volunteer with Us
-                </option>
-                <option className="text-[#1F2937] rounded-2xl">
-                  Mentorship Opportunities
-                </option>
-                <option className="text-[#1F2937] rounded-2xl">Donate</option>
-              </select>
-            </div>
-            <button className="bg-[#FDE047] py-2 px-8 text-lg rounded-full shadow-md text-[#1F2937] font-semibold mt-8 hover:bg-[#578CFF] hover:text-white transition ease-in-out duration-150">
+            <form onSubmit={handleForm}>
+            <Input 
+            label="Name" 
+            value={name}
+            onChange={(e)=> setName(e.target.value)}
+            />
+            <Input 
+            label="Email"
+            type="email"
+            value={email} 
+            onChange={(e)=> setEmail(e.target.value)}
+            />
+            <button type="submit" className="bg-[#FDE047] py-2 px-8 text-lg rounded-full shadow-md text-[#1F2937] font-semibold mt-8 hover:bg-[#578CFF] hover:text-white transition ease-in-out duration-150">
               Join us
             </button>
+            </form>
           </div>
         </div>
       </div>

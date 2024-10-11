@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <>
     <div className="py-16 px-16 min-h-screen w-full bg-gradient-to-tr from-[#578CFF]  to-[#FDE047]">
-
     <div className='flex justify-between gap-5'>
        <div className="w-2/3">
        <h1 className='font-fre text-4xl font-semibold text-[#1F2937] leading-[3rem] tracking-wide'><span className='text-5xl text-[#578CFF]'>Empowering</span> the future, one child at a time through accessible and transformative learning opportunities</h1>
