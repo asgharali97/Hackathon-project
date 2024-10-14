@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -20,10 +20,33 @@ const work = () => {
     })
     gsap.from('.parh1',{
       x:-100,
-      duration:1,
+      duration:1.5,
+      delay:0.2,
       opacity:0,
       scrollTrigger:{
-        trigger:".parh",
+        trigger:".parh1",
+        start:"top 70%",
+      }
+    })
+    gsap.from('.parh2',{
+      x:100,
+      duration:1.5,
+      delay:0.2,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".parh2",
+        start:"top 70%",
+      }
+    })
+    gsap.from('.parh3',{
+      x:-100,
+      duration:1.5,
+      delay:0.2,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".parh3",
+        start:"top 80%",
+
       }
     })
   })
@@ -47,7 +70,7 @@ const work = () => {
             </p>
           </div>
           <div className="w-full flex flex-col items-end">
-            <div className="w-2/4 mt-8">
+            <div className="parh2 w-2/4 mt-8">
               <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Community Engagement
               </h4>
@@ -56,7 +79,7 @@ const work = () => {
               </p>
             </div>
           </div>
-          <div className="w-2/4 mt-8">
+          <div className="parh3 w-2/4 mt-8">
             <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
             Global Impact
             </h4>

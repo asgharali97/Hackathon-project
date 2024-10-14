@@ -21,16 +21,13 @@ const Header = () => {
      y: -40,
      duration: 0.5,
      ease: "power.in",
-     scrub: true,
     });
 
     gsap.from(".btn", {
      opacity: 0,  
      delay:0.3,
      y: -20,
-    //  duration: 0.5,
      ease: "power.in",
-     scrub: true,
     });
   });
   const navigate = useNavigate();
