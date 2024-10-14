@@ -1,15 +1,42 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const work = () => {
+  
+  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(()=>{
+    gsap.from('.head',{
+      y:-90,
+      opacity:0,
+      delay:0.3,
+      duration:1,
+      scrollTrigger:{
+        trigger:'.head',
+        start:90
+      }
+    })
+    gsap.from('.parh1',{
+      x:-100,
+      duration:1,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".parh",
+      }
+    })
+  })
+
   return (
     <>
-      <div className="flex w-full justify-center mt-12">
+      <div className="head flex w-full justify-center mt-32">
           <h3 className="font-fre text-4xl font-semibold text-[#ffff] tracking-wide ">
             What We Do
           </h3>
         </div>
         <div className="w-full relative">
-          <div className="w-2/4 mt-8">
+          <div className="parh1 w-2/4 mt-8">
             <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Holistic Learning
             </h4>

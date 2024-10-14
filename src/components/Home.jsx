@@ -1,13 +1,26 @@
 import React from 'react';
-import Work from './work';
+import Work from './Work';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Home = () => {
-  // bg-gradient-to-tr from-[#578CFF]   to-[#FDE047] 
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(() => {
+    gsap.from('.img',{
+      x:200,
+      duration:1,
+    })
+    gsap.from('.text',{
+      scale:0,
+      duration:1,
+    })
+  })
   return (
     <>
-    <div className="py-16 px-16 min-h-screen w-full bg-gradient-to-tr from-[#578CFF]  to-[#FDE047]">
+    <div className="py-16 px-16 min-h-screen w-full bg-gradient-to-tr from-[#578CFF]  to-[#FDE047] overflow-hidden">
     <div className='flex justify-between gap-5'>
-       <div className="w-2/3">
+       <div className="text w-2/3">
        <h1 className='font-fre text-4xl font-semibold text-[#1F2937] leading-[3rem] tracking-wide'><span className='text-5xl text-[#578CFF]'>Empowering</span> the future, one child at a time through accessible and transformative learning opportunities</h1>
        <p className='text-xl mt-4 leading-8 text-[#1F2937]'> At InspireClimb, we are dedicated to breaking barriers and creating opportunities for children by providing high-quality education. Our mission is to nurture young minds and guide them towards a brighter future. Join us in our journey to empower communities, inspire curiosity, and foster growth—locally and globally.</p>
        <button className="mt-8 bg-[#FDE047] py-2 px-8 text-lg rounded-full shadow-xl text-[#1F2937] font-semibold ">Join us</button>
