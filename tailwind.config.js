@@ -8,8 +8,11 @@ export default {
     extend: {
       fontFamily:{
         fre : ["Fredoka", 'sans-serif'],
-      }
+      },
     },
+    screens: {
+      'ma': '800px',
+    }
   },
   plugins: [],
 }
