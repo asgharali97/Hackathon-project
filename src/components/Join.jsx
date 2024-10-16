@@ -127,7 +127,7 @@ const Join = ({
           <h3 className="join-head font-fre text-4xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047] mb-4">
             Why Join us
           </h3>
-          <p className="join-head-text px-16 text-xl mt-4 leading-8 text-[#fff]">
+          <p className="join-head-text ma:px-16 text-xl mt-4 leading-8 text-[#fff]">
             By joining InspireClimb, you become a part of a movement that is
             dedicated to reshaping the future. Whether you contribute as a
             mentor, volunteer, or supporter, your involvement direcgsapy impacts
@@ -137,8 +137,8 @@ const Join = ({
           </p>
         </div>
         <div className="w-full relative">
-          <div className="w-2/4 mt-8">
-            <h4 className="ar1 font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+          <div className="ma:w-2/4 w-full mt-8">
+            <h4 className="ar1 font-fre text-center ma:text-start text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Impact Lives
             </h4>
             <p className="p1 text-xl mt-4 leading-8 text-[#fff]">
@@ -147,8 +147,8 @@ const Join = ({
             </p>
           </div>
           <div className="w-full flex flex-col items-end">
-            <div className="w-2/4 mt-8">
-              <h4 className="ar2 font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+            <div className="ma:w-2/4 w-full mt-8">
+              <h4 className="ar2 font-fre text-center ma:text-start text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
                 Support Global Education
               </h4>
               <p className="p2 text-xl mt-4 leading-8 text-[#fff]">
@@ -157,8 +157,8 @@ const Join = ({
               </p>
             </div>
           </div>
-          <div className="w-2/4 mt-8">
-            <h4 className="ar3 font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+          <div className="w-full ma:w-2/4 mt-8">
+            <h4 className="ar3 font-fre text-center ma:text-start text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Community Driven
             </h4>
             <p className="p3 text-xl mt-4 leading-8 text-[#fff]">
@@ -167,16 +167,16 @@ const Join = ({
             </p>
           </div>
         </div>
-        <div className="w-full flex gap-40 mt-16 ">
-          <div className="join-img w-[50%]">
+        <div className="w-full flex flex-col lg:flex-row gap-40 mt-16 ">
+          <div className="join-img w-full lg:w-[50%]">
             <img
               src="https://images.unsplash.com/photo-1656087813550-d5cdae8ee57c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbGRzJTIwbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D"
-              className="rounded-xl shadow-lg"
+              className="rounded-xl shadow-lg w-full"
               alt="image"
             />
           </div>
-          <div className="join-form info w-[50%]">
-            <form onSubmit={handleForm}>
+          <div className="join-form info w-2/3 lg:w-[50%]">
+            <form onSubmit={handleForm} >
             <Input 
             label="Name" 
             value={name}

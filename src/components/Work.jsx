@@ -59,8 +59,8 @@ const work = () => {
           </h3>
         </div>
         <div className="w-full relative">
-          <div className="parh1 w-2/4 mt-8">
-            <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+          <div className="parh1 w-full ma:w-2/4 mt-8">
+            <h4 className="font-fre ma:text-start text-center text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Holistic Learning
             </h4>
             <p className="text-xl mt-4 leading-8 text-[#fff]">
@@ -70,8 +70,8 @@ const work = () => {
             </p>
           </div>
           <div className="w-full flex flex-col items-end">
-            <div className="parh2 w-2/4 mt-8">
-              <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+            <div className="parh2 w-full ma:w-2/4 mt-8">
+              <h4 className="font-fre ma:text-start text-center text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
               Community Engagement
               </h4>
               <p className="text-xl mt-4 leading-8 text-[#fff]">
@@ -79,8 +79,8 @@ const work = () => {
               </p>
             </div>
           </div>
-          <div className="parh3 w-2/4 mt-8">
-            <h4 className="font-fre text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
+          <div className="parh3 ma:w-2/4 w-full mt-8">
+            <h4 className="font-fre ma:text-start text-center text-2xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047]">
             Global Impact
             </h4>
             <p className="text-xl mt-4 leading-8 text-[#fff]">

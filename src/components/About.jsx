@@ -55,7 +55,6 @@ const About = ({
   return (
     <>
       <div className={`py-16 ${px} min-h-screen w-full ${bgColor} gap-5 overflow-hidden`}>
-        {/* First section */}
         <div className="flex flex-col lg:flex-row justify-between w-full gap-8">
           <div className="text1 w-full lg:w-2/4 ">
             <h1 className="font-fre mb-3 text-5xl lg:text-4xl text-center lg:text-start font-semibold text-[#1F2937] tracking-wide w-full">
@@ -77,8 +76,6 @@ const About = ({
             />
           </div>
         </div>
-  
-        {/* Second section */}
         <div className="mt-16 flex flex-col lg:flex-row justify-between w-full gap-8">
           <div className="about-img1 w-full">
             <img

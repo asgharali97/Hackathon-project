@@ -65,7 +65,7 @@ const Header = () => {
         </div>
         <nav
           className={`ma:flex ${
-            isOpen ? "absolute top-16 " : "hidden"
+            isOpen ? "absolute top-20 " : "hidden"
           } items-center justify-center text-[#1F2937] border border-black py-3 px-8  min-w-[20vw]  border-solid rounded-full font-medium capitalize fixed top-2 right-1/2 translate-x-1/2 bg-white/80 backdrop-blur-sm z-50 dark:bg-[#d1d1d1] mt-2`}
         >
           <ul className="flex items-center">
