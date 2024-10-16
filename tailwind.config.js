@@ -12,6 +12,11 @@ export default {
     },
     screens: {
       'ma': '800px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px', // Ensure this exists for large screens
+      xl: '1280px',
+      '2xl': '1536px'
     }
   },
   plugins: [],

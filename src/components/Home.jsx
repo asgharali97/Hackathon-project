@@ -32,8 +32,8 @@ const Home = () => {
        </div>
     </div>
        <Work/> 
-       <About bgColor="transparent"/>
-       <Join bgColor="transparent"/>
+       <About bgColor="transparent" px='px-0'/>
+       <Join bgColor="transparent" px='px-0'/>
     </div>
     </>
   )

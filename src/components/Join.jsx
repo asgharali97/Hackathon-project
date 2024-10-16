@@ -5,7 +5,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Join = ({
-  bgColor = 'bg-gradient-to-tr from-[#FDE047]  to-[#578CFF]'
+  bgColor = 'bg-gradient-to-tr from-[#FDE047]  to-[#578CFF]',
+  px = 'px-16'
 }) => {
   const [name , setName] = useState('')
   const [email , setEmail] = useState('')
@@ -121,7 +122,7 @@ const Join = ({
   })
   return (
     <>
-      <div className={`py-16 px-16 min-h-screen flex flex-wrap w-full ${bgColor} gap-5 overflow-hidden`}>
+      <div className={`py-16 ${px} min-h-screen flex flex-wrap w-full ${bgColor} gap-5 overflow-hidden`}>
         <div className="flex flex-col w-full justify-center items-center mt-12">
           <h3 className="join-head font-fre text-4xl font-semibold text-[#1F2937] tracking-wide underline underline-offset-8 decoration-[#FDE047] mb-4">
             Why Join us
